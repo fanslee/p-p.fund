@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PeacePandaCoin Whitepaper 2025</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    body { font-family: "Arial", sans-serif; line-height: 1.6; margin: 0; background: #f0f4f8; color: #333; }
+    .cover {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1E3D59, #4ECDC4);
+        color: #fff;
+        text-align: center;
+    }
+    .cover img { width: 200px; margin-bottom: 30px; animation: float 2s ease-in-out infinite alternate; }
+    @keyframes float { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }
+    .cover h1 { font-size: 48px; margin-bottom: 20px; }
+    .cover p { font-size: 20px; }
+    h2 { color: #1E3D59; margin-top: 40px; }
+    ul { margin-left: 20px; }
+    .section { margin: 35px 40px; background: linear-gradient(135deg, #ffffff 0%, #e8f0f8 100%); padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); position: relative; }
+    .section img.icon { width: 50px; position: absolute; top: 20px; right: 20px; animation: rotate 6s linear infinite; }
+    @keyframes rotate { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    canvas { max-width: 700px; margin: 30px auto; display: block; }
+    a { color: #1E90FF; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<!-- Cover Page -->
+<div class="cover">
+    <img src="https://worldpeacepanda.com/images/peacepanda04.png" alt="Panda Logo">
+    <h1>PeacePandaCoin (PPC)</h1>
+    <p>Love and Peace</p>
+    <p>Whitepaper 2025</p>
+</div>
+
+<!-- Content Pages -->
+<div class="section">
+<h2>1️⃣ Project Overview</h2>
+<p>
+Token Name: PeacePandaCoin (PPC)<br>
+Blockchain: Solana<br>
+Token Standard: SPL Token<br>
+Total Supply: 100,000,000 PPC<br>
+Launch Date: 2025-09-06<br>
+Official Website: <a target="_blank" href="https://worldpeacepanda.com">worldpeacepanda.com</a><br>
+Social Media:  X(Twitter): <a target="_blank" href="https://x.com/WorldPeacePanda">x.com/WorldPeacePanda</a> , Telegram: <a target="_blank" href="https://t.me/PeacePandaFamily">t.me/PeacePandaFamily</a>
+</p>
+<p>Vision: As a world peace ambassador, Peace Panda spreads its cute image and calls for world peace. And help ordinary people who have been harmed by war and disaster.</p>
+</div>
+
+<div class="section">
+<h2>2️⃣ Tokenomics</h2>
+<p>Total Supply: 100,000,000 PPC</p>
+<ul>
+<li>Team: 10%</li>
+<li>Community Rewards: 40%</li>
+<li>Private/Public Sale: 30%</li>
+<li>Marketing: 10%</li>
+<li>Ecosystem Fund: 10%</li>
+</ul>
+
+<canvas id="tokenPieChart"></canvas>
+<script>
+const ctx = document.getElementById('tokenPieChart').getContext('2d');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Team', 'Community Rewards', 'Private/Public Sale', 'Marketing', 'Ecosystem Fund'],
+        datasets: [{
+            data: [10, 40, 30, 10, 10],
+            backgroundColor: ['#FF6B6B', '#4ECDC4', '#FFD93D', '#845EC2', '#0081CF'],
+            borderWidth: 3,
+            borderColor: '#fff'
+        }]
+    },
+    options: { responsive: true, plugins: { legend: { position: 'right', labels: { font: { size: 14 } } } } }
+});
+</script>
+</div>
+
+<div class="section">
+<h2>3️⃣ Roadmap</h2>
+<canvas id="roadmapChart"></canvas>
+<script>
+const ctx2 = document.getElementById('roadmapChart').getContext('2d');
+new Chart(ctx2, {
+    type: 'line',
+    data: {
+        labels: ['2025 Q4', '2026 Q1', '2026 Q2', '2026 Q3'],
+        datasets: [{
+            label: 'Project Milestones',
+            data: [1, 2, 3, 4],
+            fill: false,
+            borderColor: '#FF6B6B',
+            backgroundColor: '#FF6B6B',
+            tension: 0.4,
+            pointStyle: 'circle',
+            pointRadius: 12,
+            pointHoverRadius: 15
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            y: { display: false },
+            x: { title: { display: true, text: 'Time', color: '#333', font: { size: 14 } }, ticks: { font: { size: 13 } } }
+        }
+    }
+});
+</script>
+
+<ul>
+<li>Phase 1 (2025 Q4): Token Deployment, DEX Listing</li>
+<li>Phase 2 (2026 Q1): Community Launch, Liquidity Mining</li>
+<li>Phase 3 (2026 Q2): CEX Listing Application, Ecosystem Expansion</li>
+<li>Phase 4 (2026 Q3): Community Governance Launch, Cross-chain Cooperation</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>4️⃣ Community & Governance</h2>
+<p>
+Community Channels: X(Twitter), Telegram etc.<br>
+Governance: Token holders can vote on ecosystem fund usage and community rewards<br>
+Incentives: Airdrops, LP staking rewards, activity bonuses
+</p>
+</div>
+
+<div class="section">
+<h2>5️⃣ Listing & Trading</h2>
+<p>
+Decentralized Exchanges (DEX): Raydium etc.<br>
+Centralized Exchange (CEX) Plan: Apply to Binance, OKX etc.<br>
+Trading Pairs: PPC/SOL etc.
+</p>
+</div>
+
+<div class="section">
+<h2>6️⃣ Risk & Disclaimer</h2>
+<ul>
+<li>Price Volatility: Token price may be affected by market trends</li>
+<li>Liquidity Risk: Low early liquidity may cause slippage</li>
+<li>Smart Contract Risk: Audited but potential vulnerabilities may exist</li>
+<li>Compliance: This whitepaper is for project introduction only and does not constitute investment advice</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>7️⃣ Contact</h2>
+<p>
+Official Website: <a target="_blank" href="https://worldpeacepanda.com">worldpeacepanda.com</a><br>
+X(Twitter): <a target="_blank" href="https://x.com/WorldPeacePanda">x.com/WorldPeacePanda</a><br>
+Telegram: <a target="_blank" href="https://t.me/PeacePandaFamily">t.me/PeacePandaFamily</a><br>
+Email: do@fanslee.com
+</p>
+</div>
+
+</body>
+</html>
