@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bags — 静态快照（骨架）</title>
+
+  <!-- 原站可能使用的 CSS/字体（保留外链，真实地址需根据开发者工具确认） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://bags.fm/static/css/main.css" integrity="" crossorigin="anonymous" />
+  <style>
+    /* 最小 fallback 样式，避免完全空白 */
+    body { font-family: system-ui, -apple-system, "Helvetica Neue", Arial; margin:0; background:#0b0b0b; color:#fff; }
+    header { padding:18px; border-bottom:1px solid rgba(255,255,255,.04); }
+    .container{ max-width:1100px; margin:24px auto; padding:0 16px;}
+    .hero{ padding:32px 0; }
+    .placeholder { background: rgba(255,255,255,0.03); border-radius:8px; padding:20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <strong>Bags（静态快照）</strong>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero placeholder">
+      <h1>页面快照 / 静态骨架</h1>
+      <p>这是从 <code></code> 生成的静态 HTML 骨架。</p>
+      <p><em>注意：</em>原站为单页应用（SPA），大部分内容由 JavaScript 动态填充；要得到完全渲染后的静态 HTML，请使用“无头浏览器”渲染并导出（见下文 Puppeteer 脚本）。</p>
+    </section>
+
+    <section class="placeholder" style="margin-top:18px;">
+      <h2>主要区域（示例）</h2>
+      <div id="app">
+        <!-- 原站动态内容通常会在此处由 JS 注入 -->
+        <p>在原网页中，这里通常会显示 token、launch、交易面板等动态内容。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer style="padding:24px; text-align:center; opacity:.6;">
+    静态快照 — 由 ChatGPT 生成。原始页面： <a href="" target="_blank" style="color:inherit; text-decoration:underline;">bags.fm/…</a>
+  </footer>
+
+  <!-- 原站主要脚本（保留外链） -->
+  <script src="https://bags.fm/static/js/main.js" defer></script>
+</body>
+</html>
