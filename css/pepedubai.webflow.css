@@ -307,7 +307,7 @@ p {
 }
 
 .header-logo-grid {
-  grid-column-gap: 2.5rem;
+  /*grid-column-gap: 2.5rem;*/
   grid-row-gap: 2.5rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -315,9 +315,9 @@ p {
   display: flex;
 }
 
-.header-logo-grid.footer {
+/*.header-logo-grid.footer {
   margin-top: 0;
-}
+}*/
 
 .hero-heading {
   color: #3c8430;
