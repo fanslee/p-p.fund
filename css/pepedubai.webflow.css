@@ -544,7 +544,12 @@ p {
   font-weight: 500;
   line-height: 1.6;
 }
-
+.paragraph-normal.small-normal-left2{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6;
+}
 .gobal-grid-ldiv {
   text-align: center;
 }
